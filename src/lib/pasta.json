@@ -1,0 +1,90 @@
+{
+	"trompetas": {
+		"verde": {},
+		"rosso": {},
+		"amarillo": {},
+		"pollo_tandoori": {},
+		"portobello_trufado": {},
+		"pomodoro": {},
+		"boloñesa": {},
+		"salmon_trufado": {},
+		"6_quesos": {},
+		"carbocrema": {},
+		"cacio_e_pepe": {},
+		"aceite_y_queso": {}
+	},
+	"spaguetti": {
+		"verde": {},
+		"rosso": {},
+		"amarillo": {},
+		"pollo_tandoori": {},
+		"portobello_trufado": {},
+		"pomodoro": {},
+		"boloñesa": {},
+		"salmon_trufado": {},
+		"6_quesos": {},
+		"carbocrema": {},
+		"cacio_e_pepe": {},
+		"aceite_y_queso": {}
+	},
+	"tornados": {
+		"verde": {},
+		"rosso": {},
+		"amarillo": {},
+		"pollo_tandoori": {},
+		"portobello_trufado": {},
+		"pomodoro": {},
+		"boloñesa": {},
+		"salmon_trufado": {},
+		"6_quesos": {},
+		"carbocrema": {},
+		"cacio_e_pepe": {},
+		"aceite_y_queso": {}
+	},
+	"fusilli": {
+		"verde": {},
+		"rosso": {},
+		"amarillo": {},
+		"pollo_tandoori": {},
+		"portobello_trufado": {},
+		"pomodoro": {},
+		"boloñesa": {},
+		"salmon_trufado": {},
+		"6_quesos": {},
+		"carbocrema": {},
+		"cacio_e_pepe": {},
+		"aceite_y_queso": {}
+	},
+	"gnocchi": {
+		"verde": {},
+		"rosso": {},
+		"amarillo": {},
+		"pollo_tandoori": {},
+		"portobello_trufado": {},
+		"pomodoro": {},
+		"boloñesa": {},
+		"salmon_trufado": {},
+		"6_quesos": {},
+		"carbocrema": {},
+		"cacio_e_pepe": {},
+		"aceite_y_queso": {}
+	},
+	"maccheroni estrellas": {
+		"verde": {},
+		"rosso": {},
+		"amarillo": {},
+		"pollo_tandoori": {
+			"title": "Maccheroni de estrellas al pollo tandoori",
+			"review": "El picante le sienta bastante bien a la salsa, un resultado bastante sabroso. La pasta un poco demasiado arenosa para mi gusto.",
+			"score": 70
+		},
+		"portobello trufado": {},
+		"pomodoro": {},
+		"boloñesa": {},
+		"salmon_trufado": {},
+		"6_quesos": {},
+		"carbocrema": {},
+		"cacio_e_pepe": {},
+		"aceite_y_queso": {}
+	}
+}
