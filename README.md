@@ -1,6 +1,6 @@
 # Reviews de pasta.
 
-This is a simple site built as a way of tracking all the possible pastas this new pasta place near our co-working has.
+This is a simple site built as a way of tracking all the possible pastas this new pasta place near my co-working building.
 
 # Contributing.
 
