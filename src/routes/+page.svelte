@@ -1,7 +1,6 @@
 <script>
 	import pasta from '$lib/pasta.json';
 	let [total, reviewed] = [0, 0];
-	console.log(pasta);
 	for (const [_, pastaTypeReviews] of Object.entries(pasta)) {
 		for (const [_, review] of Object.entries(pastaTypeReviews)) {
 			total++;
@@ -32,8 +31,8 @@
 		<h2>Reviews</h2>
 		{#each Object.entries(pasta) as [pastaType, pastaTypeReviews]}
 			{#if hasReviews(pastaTypeReviews)}
-				<section style="text-transform: capitalize;" id={pastaType}>
-					<h3>{pastaType}</h3>
+				<section id={pastaType}>
+					<h3 style="text-transform: capitalize;">{pastaType}</h3>
 					{#each Object.entries(pastaTypeReviews) as [review_key, review_value]}
 						{#if Object.keys(review_value).length !== 0}
 							<article id={review_key}>
