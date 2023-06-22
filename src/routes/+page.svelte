@@ -1,4 +1,5 @@
 <script>
+	import '@picocss/pico';
 	import pasta from '$lib/pasta.json';
 	let [total, reviewed] = [0, 0];
 	for (const [_, pastaTypeReviews] of Object.entries(pasta)) {
@@ -18,6 +19,25 @@
 		}
 		return false;
 	}
+
+	// turn our revies (a map[string][review]) into an array of non-empty reviews grouped in tuples of two
+	// so we can easily display them in a grid of two elements.
+	function gridify(reviews) {
+		const content = Object.values(reviews);
+		const grouped = content
+			.filter((r) => Object.keys(r).length !== 0)
+			.map((r, idx) => ({ id: idx, ...r }))
+			.reduce((result, current, index) => {
+				if (index % 2 === 0) {
+					result.push([current]);
+				} else {
+					result[result.length - 1].push(current);
+				}
+				return result;
+			}, []);
+
+		return grouped;
+	}
 </script>
 
 <header class="container">
@@ -33,18 +53,20 @@
 			{#if hasReviews(pastaTypeReviews)}
 				<section id={pastaType}>
 					<h3 style="text-transform: capitalize;">{pastaType}</h3>
-					{#each Object.entries(pastaTypeReviews) as [review_key, review_value]}
-						{#if Object.keys(review_value).length !== 0}
-							<article id={review_key}>
-								<h2>{review_value.title}</h2>
-								<p>{review_value.review}</p>
-								<footer>
-									<p>Valoración final:</p>
-									<progress value={review_value.score} max="100" min="0"/>
-									<center><small>{review_value.score} / 100</small></center>
-								</footer>
-							</article>
-						{/if}
+					{#each gridify(pastaTypeReviews) as reviewGroup}
+						<div class="grid">
+							{#each reviewGroup as review}
+								<article id={review.id}>
+									<h2>{review.title}</h2>
+									<p>{review.review}</p>
+									<footer>
+										<p>Valoración final:</p>
+										<progress value={review.score} max="100" min="0" />
+										<center><small>{review.score} / 100</small></center>
+									</footer>
+								</article>
+							{/each}
+						</div>
 					{/each}
 				</section>
 			{/if}
@@ -53,6 +75,6 @@
 	<section id="progress">
 		<h2>Progreso</h2>
 		<p>Se han probado {reviewed} de {total} posibles pastas!</p>
-		<progress value={reviewed} max={total} min="0"/>
+		<progress value={reviewed} max={total} min="0" />
 	</section>
 </main>
