@@ -1,5 +1,4 @@
 <script>
-	import '@picocss/pico';
 	import pasta from '$lib/pasta.json';
 	let [total, reviewed] = [0, 0];
 	for (const [_, pastaTypeReviews] of Object.entries(pasta)) {
