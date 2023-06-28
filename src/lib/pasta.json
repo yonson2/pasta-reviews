@@ -24,7 +24,11 @@
 		"pollo_tandoori": {},
 		"portobello_trufado": {},
 		"pomodoro": {},
-		"boloñesa": {},
+		"boloñesa": {
+			"title": "Spaguetti a la boloñesa",
+			"review": "El típico de los típicos. Con esta pasta no te equivocas, pero tampoco te sorprendes. Normal.",
+			"score": 70
+		},
 		"salmon_trufado": {},
 		"6_quesos": {},
 		"carbocrema": {},
@@ -51,7 +55,11 @@
 	},
 	"fusilli": {
 		"verde": {},
-		"rosso": {},
+		"rosso": {
+			"title": "Fusilli al pesto rosso",
+			"review": "Plato infundido por el olor de la pasta al curry, un buen sabor pero una combinación un poco seca. Pidiendo extra de queso mejoraría.",
+			"score": 65
+		},
 		"amarillo": {},
 		"pollo_tandoori": {},
 		"portobello_trufado": {},
