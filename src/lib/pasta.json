@@ -78,7 +78,11 @@
 		"pollo_tandoori": {},
 		"portobello_trufado": {},
 		"pomodoro": {},
-		"boloñesa": {},
+		"boloñesa": {
+			"title": "Rigatoni alla Boloñesa",
+			"review": "Clásico entre los clásicos, era imposible fallar. Regustillo delisioso casi a chorizo y macarrones como mejor forma posible de pasta.",
+			"score": 78
+		},
 		"salmon_trufado": {},
 		"6_quesos": {},
 		"carbocrema": {
@@ -104,7 +108,11 @@
 		"aceite_y_queso": {}
 	},
 	"maccheroni estrellas": {
-		"verde": {},
+		"verde": {
+			"title": "Maccheroni estrellas al pesto",
+			"review": "Un buen pesto que además camufla la textura arenosa, buena combinación.",
+			"score": 76
+		},
 		"rosso": {},
 		"amarillo": {},
 		"pollo_tandoori": {
